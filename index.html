@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dynamic To-Do Application</title>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <div class="todo-card">
+    <!-- Header -->
+    <div class="header">
+      <h1>Task Tracker</h1>
+      <p>Auspify Technologies - Task 3</p>
+    </div>
+
+    <!-- Input Form -->
+    <form id="todo-form">
+      <input 
+        type="text" 
+        id="task-input" 
+        placeholder="Enter a new task..." 
+        required
+      />
+      <button type="submit" class="btn-add">
+        <i class="fa-solid fa-plus"></i> Add
+      </button>
+    </form>
+
+    <!-- Stats Bar -->
+    <div class="stats-bar">
+      <span>Total Tasks: <strong id="total-count">0</strong></span>
+      <span>Completed: <strong id="completed-count">0</strong></span>
+    </div>
+
+    <!-- Task List -->
+    <ul id="task-list">
+      <!-- Tasks dynamic render hongi -->
+    </ul>
+
+    <!-- Empty State -->
+    <div id="empty-state" class="empty-state">
+      <i class="fa-regular fa-clipboard"></i>
+      <p>No tasks available. Add one above!</p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
